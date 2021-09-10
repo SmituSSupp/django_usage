@@ -12,4 +12,3 @@ class Book(models.Model):
     book_name = models.CharField(max_length=40, blank=False)
     book_description = models.CharField(max_length=200, blank=True, null=True)
     book_authors = models.ManyToManyField(Author, related_name="authors", blank=False)
-# Create your models here.
