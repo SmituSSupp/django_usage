@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework import permissions
 from rest_framework import viewsets
 from rest_framework import renderers
+from django.http import HttpResponse
 
 
 from library.models import Author, Book
@@ -21,3 +22,6 @@ class BookViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
+
+def index(request):
+    return HttpResponse("welcome to base root of library api")
