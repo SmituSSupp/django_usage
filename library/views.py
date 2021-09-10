@@ -15,9 +15,6 @@ class AuthorViewSet(viewsets.ModelViewSet):
     serializer_class = AuthorSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-    # def perform_create(self, serializer):
-    #     serializer.save(owner=self.request.user)
-
 
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
