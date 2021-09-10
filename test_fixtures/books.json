@@ -1,0 +1,270 @@
+[
+	{
+		"model": "library.book",
+		"pk": 1,
+		"fields": {
+			"book_name": "Of mice & men",
+			"book_description": "book written by John Steinback",
+			"book_authors": [
+				1
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 2,
+		"fields": {
+			"book_name": "Grapes of Wraith",
+			"book_description": "not berries",
+			"book_authors": [
+				1
+
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 3,
+		"fields": {
+			"book_name": "East of Eden",
+			"book_description": "close to hell",
+			"book_authors": [
+				1
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 4,
+		"fields": {
+			"book_name": "Die Verwandlung",
+			"book_description": "monster",
+			"book_authors": [
+				2
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 5,
+		"fields": {
+			"book_name": "Castle",
+			"book_description": "building",
+			"book_authors": [
+				2
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 6,
+		"fields": {
+			"book_name": "Process",
+			"book_description": "not thread",
+			"book_authors": [
+				2
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 7,
+		"fields": {
+			"book_name": "Gamer",
+			"book_description": "",
+			"book_authors": [
+				3
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 8,
+		"fields": {
+			"book_name": "Imps",
+			"book_description": "",
+			"book_authors": [
+				3
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 9,
+		"fields": {
+			"book_name": "War and Piece. Part 1",
+			"book_description": "",
+			"book_authors": [
+				4
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 10,
+		"fields": {
+			"book_name": "War and Piece. Part 2",
+			"book_description": "",
+			"book_authors": [
+				4
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 11,
+		"fields": {
+			"book_name": "Call of Ctulhu",
+			"book_description": "",
+			"book_authors": [
+				5
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 12,
+		"fields": {
+			"book_name": "Dagon",
+			"book_description": "creepy",
+			"book_authors": [
+				5
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 13,
+		"fields": {
+			"book_name": "Hobbit",
+			"book_description": "",
+			"book_authors": [
+				6
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 14,
+		"fields": {
+			"book_name": "Lord of the rings",
+			"book_description": "",
+			"book_authors": [
+				6
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 15,
+		"fields": {
+			"book_name": "Generation P",
+			"book_description": "",
+			"book_authors": [
+				7
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 16,
+		"fields": {
+			"book_name": "Chapaev and the void",
+			"book_description": "",
+			"book_authors": [
+				7
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 17,
+		"fields": {
+			"book_name": "3 moustached guys",
+			"book_description": "",
+			"book_authors": [
+				8
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 18,
+		"fields": {
+			"book_name": "Lady with C",
+			"book_description": "",
+			"book_authors": [
+				8
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 19,
+		"fields": {
+			"book_name": "C++",
+			"book_description": "",
+			"book_authors": [
+				9
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 20,
+		"fields": {
+			"book_name": "Python",
+			"book_description": "",
+			"book_authors": [
+				10
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 21,
+		"fields": {
+			"book_name": "PY++",
+			"book_description": "",
+			"book_authors": [
+				10,
+				9
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 22,
+		"fields": {
+			"book_name": "C",
+			"book_description": "",
+			"book_authors": [
+				11
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 23,
+		"fields": {
+			"book_name": "C++C",
+			"book_description": "",
+			"book_authors": [
+				11,
+				9
+			]
+		}
+	},
+	{
+		"model": "library.book",
+		"pk": 24,
+		"fields": {
+			"book_name": "PYC",
+			"book_description": "",
+			"book_authors": [
+				11,
+				10
+			]
+		}
+	}
+]

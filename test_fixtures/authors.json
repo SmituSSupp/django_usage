@@ -1,0 +1,90 @@
+[
+	{
+		"model": "library.author",
+		"pk": 1,
+		"fields": {
+			"author_name": "John Steinbeck",
+			"author_description": "author of mice and men"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 2,
+		"fields": {
+			"author_name": "Franz Kafka",
+			"author_description": "shy guy"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 3,
+		"fields": {
+			"author_name": "Fyodor Dostoevsky",
+			"author_description": "Gamer"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 4,
+		"fields": {
+			"author_name": "Lev Tolstoy",
+			"author_description": "Na dele prostoy"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 5,
+		"fields": {
+			"author_name": "Howard Lovecraft",
+			"author_description": "Myths etc"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 6,
+		"fields": {
+			"author_name": "Ronald Tolkien",
+			"author_description": "Lord of the O"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 7,
+		"fields": {
+			"author_name": "Victor Pelevin",
+			"author_description": "brainfuck but good"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 8,
+		"fields": {
+			"author_name": "Alexander Dumas",
+			"author_description": "frenchman"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 9,
+		"fields": {
+			"author_name": "Bjorn Stroustrup",
+			"author_description": "C++ father"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 10,
+		"fields": {
+			"author_name": "Guido Van Rossum",
+			"author_description": "Python father"
+		}
+	},
+	{
+		"model": "library.author",
+		"pk": 11,
+		"fields": {
+			"author_name": "Dennis Ritchie",
+			"author_description": "C father"
+		}
+	}
+]
