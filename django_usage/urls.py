@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from library.views import AuthorViewSet, BookViewSet, index
+from library.views import AuthorViewSet, BookViewSet, index, library
 from rest_framework.urlpatterns import format_suffix_patterns
 
 
@@ -29,8 +29,9 @@ book_detail = BookViewSet.as_view({
 urlpatterns = format_suffix_patterns([
     path('authors/', author_list, name='author-list'),
     path('authors/<int:pk>/', author_detail, name='author-detail'),
-    path('book/', book_list, name='book-list'),
-    path('book/<int:pk>/', book_detail, name='book-detail'),
-    path('admin/', admin.site.urls),
+    path('books/', book_list, name='book-list'),
+    path('books/<int:pk>/', book_detail, name='book-detail'),
     #path('', index, name='index'),
+    path('library', library, name='library'),
+    path('admin/', admin.site.urls),
 ])
