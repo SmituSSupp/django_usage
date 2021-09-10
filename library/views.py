@@ -1,8 +1,13 @@
-from rest_framework.response import Response
 from rest_framework import permissions
 from rest_framework import viewsets
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import JsonResponse
+
+from asgiref.sync import sync_to_async
+
+import asyncio
+from time import sleep
 
 
 from django.core.paginator import Paginator
@@ -47,3 +52,29 @@ def library(request):
     page_obj = paginator.get_page(page_number)
 
     return render(request, 'list.html', {'page_obj': page_obj})
+
+
+async def calculating_imit_books():
+    for num in range(0, 4):
+        await asyncio.sleep(1)
+        print(num)
+
+    return 'smth'
+
+
+async def calculating_imit_authors():
+    for num in range(0, 2):
+        await asyncio.sleep(2)
+        print(num)
+
+    return 'smth'
+
+
+async def statistic(request):
+    books_num = await sync_to_async(Book.objects.all, thread_sensitive=True)()
+    authors_num = await sync_to_async(Author.objects.all, thread_sensitive=True)()
+    books_num = await sync_to_async(len)(books_num)
+    authors_num = await sync_to_async(len)(authors_num)
+    _ = await asyncio.gather(*[calculating_imit_authors(), calculating_imit_books()])
+
+    return JsonResponse({'msg': f"Number of books - {books_num} number of authors - {authors_num}"})
