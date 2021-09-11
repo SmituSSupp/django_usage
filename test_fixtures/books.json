@@ -4,7 +4,7 @@
 		"pk": 1,
 		"fields": {
 			"book_name": "Of mice & men",
-			"book_description": "book written by John Steinback",
+			"book_description": "book written by John Steinbeck",
 			"book_authors": [
 				1
 			]

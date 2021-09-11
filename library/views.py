@@ -7,7 +7,6 @@ from django.http import JsonResponse
 from asgiref.sync import sync_to_async
 
 import asyncio
-from time import sleep
 
 
 from django.core.paginator import Paginator
@@ -21,13 +20,13 @@ from library.serializers import AuthorSerializer, BookSerializer
 class AuthorViewSet(viewsets.ModelViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    #permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    #permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 def index(request):

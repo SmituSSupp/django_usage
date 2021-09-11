@@ -3,7 +3,7 @@ from rest_framework import serializers
 
 
 class BookSerializer(serializers.ModelSerializer):
-    book_authors = serializers.PrimaryKeyRelatedField(queryset=Author.objects.all(), many=True)
+    book_authors = serializers.PrimaryKeyRelatedField(queryset=Author.objects.all(), many=True, required=True)
 
     class Meta:
         model = Book
