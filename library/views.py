@@ -46,7 +46,19 @@ def library(request):
         authors = Author.objects.filter(author_name__icontains=author_filter)
         books = books.filter(book_authors__in=authors)
 
-    paginator = Paginator(books, 6)
+    books_with_authors = list()
+
+    for book in books:
+        title_and_author = book.book_name + " by "
+
+        for author in book.book_authors.all():
+            title_and_author += author.author_name + ", "
+
+        title_and_author = title_and_author[:-2]
+
+        books_with_authors.append(title_and_author)
+
+    paginator = Paginator(books_with_authors, 6)
     page_obj = paginator.get_page(page_number)
 
     return render(request, 'list.html', {'page_obj': page_obj})
